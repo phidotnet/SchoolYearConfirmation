@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">School Year Confirmation</string>
+    <string name="label_start">Start</string>
+    <string name="label_student_id">Student ID</string>
+    <string name="label_checkbox_ack">I am Parent/Guardian of the student</string>
+</resources>
