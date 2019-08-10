@@ -2,6 +2,7 @@ package com.apps.schoolyearconfirmation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,10 +31,20 @@ public class MainActivity extends AppCompatActivity {
         // Check Student ID length
         if (editTextStudentID.getText().toString().length() != 6) {
             Toast.makeText(this, "Invalid Student ID. Please provide 6 digits Student ID.", Toast.LENGTH_LONG).show();
+            return;
         }
 
+        // Check Acknowledge of user
         if (checkBoxAck.isChecked() == false) {
             Toast.makeText(this, "You must be Parent/Guardian to continue.", Toast.LENGTH_SHORT).show();
+            return;
         }
+
+        // Start new screen activity
+        Intent intentConfirmSchool = new Intent();
+        intentConfirmSchool.setClass(this, ConfirmSchoolActivity.class);
+        intentConfirmSchool.putExtra("g_student_ui", editTextStudentID.getText().toString());
+        startActivity(intentConfirmSchool);
+        finish();
     }
 }

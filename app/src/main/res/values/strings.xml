@@ -3,4 +3,16 @@
     <string name="label_start">Start</string>
     <string name="label_student_id">Student ID</string>
     <string name="label_checkbox_ack">I am Parent/Guardian of the student</string>
+
+    <string-array name="schoolArray">
+        <item>Dist. 1-School A, Grade 1-A</item>
+        <item>Dist. 1-School A, Grade 1-B</item>
+        <item>Dist. 1-School A, Grade 2-A</item>
+        <item>Dist. 1-School A, Grade 2-B</item>
+        <item>Dist. 2-School B, Grade 1-A</item>
+        <item>Dist. 2-School B, Grade 1-B</item>
+        <item>Dist. 2-School B, Grade 2-A</item>
+        <item>Dist. 2-School B, Grade 2-B</item>
+    </string-array>
+
 </resources>

@@ -76,4 +76,6 @@
                 android:text="@string/label_start" />
         </TableRow>
     </TableLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
